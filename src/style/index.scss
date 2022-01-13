@@ -1,0 +1,60 @@
+/**样式重置*/
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100%;
+  min-width: 1200px;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+#app {
+  height: 100%;
+}
+div,p{
+  box-sizing: border-box;
+}
+
+/**修改全局的滚动条*/
+/**滚动条的宽度*/
+::-webkit-scrollbar {
+  width: 5px; 
+  height: 5px;
+}
+//滚动条的滑块
+::-webkit-scrollbar-thumb {
+  background-color: #434b55;
+  border-radius: 3px;
+}
+//全局表单
+.zu-config {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  .zu-header {
+    height: 100%;
+    line-height: 100%;
+    text-align: left;
+    font-size: 12px;
+    max-width: 30%;
+    flex: 0 0 30%;
+    color: white;
+  }
+  .zu-content {
+    text-align: left;
+    max-width: 66.6666666667%;
+    flex: 0 0 66.6666666667%;
+    .el-slider{
+      padding-left: 10px;
+      --el-slider-button-size:10px;
+    }
+  }
+}

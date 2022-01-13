@@ -1,0 +1,104 @@
+/* 
+layout菜单栏组件
+*/
+.el-menu-vertical-demo:not(.el-menu--collapse) {
+  width: 200px;
+  min-height: 400px;
+  .svg-icon {
+    // width: 100%;
+    margin-right: 15px;
+  }
+  .el-menu-item-group__title {
+    padding: 0px !important;
+  }
+  ul {
+    .el-menu-item {
+      margin-left: 10px !important;
+    }
+  }
+}
+.el-popper.is-light {
+  background-color: #545c64 !important;
+  border: none !important;
+}
+.el-sub-menu__title{
+  &:hover{
+    background-color: #2e343c!important;
+  }
+}
+.el-menu--horizontal {
+  border: none !important;
+}
+.el-menu--popup-right-start {
+  width: 600px !important;
+  display: flex;
+  // justify-content: space-between;
+  flex-wrap: wrap;
+}
+.is-opened {
+  &:hover {
+    background-color: #1d1f26 !important;
+  }
+}
+.menu_svg {
+  margin-left: 5px;
+}
+/* 
+el选择框
+*/
+.el-select {
+  width: 100%;
+}
+.el-select-dropdown__item {
+  color: white !important;
+}
+.el-select-dropdown__item.hover,
+.el-select-dropdown__item:hover {
+  background-color: #2e343c !important;
+}
+.el-popper__arrow {
+  display: none !important;
+}
+//输入框背景颜色
+.el-textarea__inner,
+.el-input__inner {
+  background: #0f1014 !important;
+  border: 1px solid #282e3a !important;
+}
+//计数器背景色
+.el-input-number__decrease,
+.el-input-number__increase {
+  background-color: #1d1f26 !important;
+}
+.el-input-number__increase {
+  border: none !important;
+}
+.el-input-number__decrease {
+  border: none !important;
+}
+//折叠栏
+.el-collapse {
+  border: none !important;
+  .el-collapse-item__header {
+    // border: none!important;
+    font-weight: 600;
+  }
+}
+.el-collapse-item__header {
+  background-color: #1d1f26 !important;
+  color: white !important;
+  border-bottom-color: #2e343c !important;
+}
+.el-collapse-item__wrap {
+  background-color: #0f1014 !important;
+  border: none !important;
+  padding: 0 10px !important;
+}
+.el-collapse-item__content {
+  padding-top: 10px !important;
+}
+//抽屉
+.el-drawer {
+  background-color: #2e343c !important;
+  color: white !important;
+}
