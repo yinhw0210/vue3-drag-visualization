@@ -3,8 +3,8 @@
 ## 介绍
 本项目为Zeus BI开源简化版，一款简单的可视化搭建工具，重点放在了功能实现上，已实现基本的可视化图表配置  
 完整版功能请查看  
-Zeus BI官网 http://www.maingods.xyz (未更新)  
-体验网址    http://www.maingods.xyz (最新)  
+Zeus BI官网 http://www.maingods.xyz (暂未开放)  
+体验网址    http://www.maingods.xyz/dashboard (最新)  
 
 ## 为什么vue3项目要抛弃SFC写法而尝试jsx/tsx方式来编码？  
 事实上我这个项目并没有完全抛弃，只是尝试结合两种语法去开发。  
