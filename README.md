@@ -2,7 +2,10 @@
 
 ## 介绍
 本项目为Zeus BI开源简化版，一款简单的可视化搭建工具，重点放在了功能实现上，已实现基本的可视化图表配置  
-完整版功能请查看Zeus BI官网 http://www.maingods.xyz  
+完整版功能请查看  
+Zeus BI官网 http://www.maingods.xyz (未更新)  
+体验网址    http://www.maingods.xyz (最新)  
+
 ## 为什么vue3项目要抛弃SFC写法而尝试jsx/tsx方式来编码？  
 事实上我这个项目并没有完全抛弃，只是尝试结合两种语法去开发。  
 这个问题在掘金上Jokcy老哥的一篇博客已经总结得相当不错，我就不再多赘述相关细节，博客链接如下：
@@ -10,7 +13,8 @@
 #### 基本架构
 Vite + Vue 3 + Typescript + jsx + sass + axios + router + vuex + elementplus  
 基本架构以vue3的模板语法为基础，组件的开发以jsx为主。   
-整个配置页面的交互用hooks来实现（个人认为比较省事）
+整个配置页面的交互用hooks来实现
+此项目的基础脚手架将会在以后发出来 当然你们也可以自己删除这个项目无用的地方 得到一个vite vue3的脚手架
 ### 涉及到的主要依赖：
 
 1. `vue@^3.2.13`
@@ -34,12 +38,13 @@ Vite + Vue 3 + Typescript + jsx + sass + axios + router + vuex + elementplus
 - [x] router
 - [x] vuex （推荐使用hooks和inject来实现，可以等一手vuex5）
 - [x] Element-plus  
+- [x] svg封装  
 #### 安装教程
 1. 推荐使用`yarn`
 ```bash
 $ yarn install
 ```
-2. 确保安装`yarn`
+2. 启动
 ```bash
 $ yarn dev
 ```
@@ -79,7 +84,7 @@ $ yarn dev
 │  │ vite.config.ts # vite配置文件
 ```
 #### jsx/tsx语法规范
-如果有过react的开发经验，可以发现除了vue中独有的几个新概念：`slot`、`directive`、`emit`等以外，大部分支持vue的jsx语法规范和react的都是一样的，相同的部分我就不多说了，不了解的可以百度！！！项vue3目改造的纯净版demo和说明以后会发出来（还没写完）值得一提的是`@vue/babel-plugin-jsx`帮我们解析了几个常见的vue指令，比如`v-show`、`v-model`，这两个的用法和功能与vue中一摸一样。其他的直接按照react的语法写就行了
+如果有过react的开发经验，可以发现除了vue中独有的几个新概念：`slot`、`directive`、`emit`等以外，大部分支持vue的jsx语法规范和react的都是一样的，相同的部分我就不多说了，不了解的可以百度！！！值得一提的是`@vue/babel-plugin-jsx`帮我们解析了几个常见的vue指令，比如`v-show`、`v-model`，这两个的用法和功能与vue中一摸一样。其他的直接按照react的语法写就行了
 ##### jsx/tsx Render方式
 jsx和tsx目前还支持render方式的写法，这种写法目前也是大多数开源UI库的写法，个人比较推荐这种写法，它将逻辑层和模板层分开后期更易维护，具体可以看一下建议demo
 ```tsx
