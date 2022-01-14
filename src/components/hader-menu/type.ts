@@ -45,17 +45,17 @@ export const partsList = [
           }
         ]
       },
-      {
-        title: '环形图',
-        icon: 'circle',
-        data: [
-          {
-            name: '环形图',
-            type: 'circle',
-            code: 1
-          }
-        ]
-      },
+      // {
+      //   title: '环形图',
+      //   icon: 'circle',
+      //   data: [
+      //     {
+      //       name: '环形图',
+      //       type: 'circle',
+      //       code: 1
+      //     }
+      //   ]
+      // },
       {
         title: '雷达图',
         icon: 'radar',
