@@ -1,6 +1,6 @@
 {
   "name": "vite-project",
-  "version": "0.0.0",
+  "version": "0.0.0-bate.1",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
