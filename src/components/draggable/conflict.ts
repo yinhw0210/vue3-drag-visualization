@@ -6,7 +6,8 @@ function formatTransformVal(tl, tt) {
 export function conflict(top, left, width, height, nodes, oneself) {
   for (const item of nodes) {
     //去除无用text元素及自身dom元素进行对比
-    if (item.className !== undefined && !item.className.includes(oneself.className)) {
+    // fix: 通过打印得到className可能会出现为空的情况,因为undefined做了强校验所以出现辅助线元素的时候就会判断失误
+    if (item.className && item.className !== undefined && !item.className.includes(oneself.className)) {
       const tw = item.offsetWidth
       const th = item.offsetHeight
       // 获取left与right
